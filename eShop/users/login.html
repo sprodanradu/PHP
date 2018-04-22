@@ -1,0 +1,74 @@
+<html>
+<head>
+  <style >
+  div.buttons{
+    text-align: right;
+  }
+  button {
+    background-color: white;
+    border: none;
+  }
+  button.modify {
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: green;
+    font-size: 15px;
+  }
+
+   input.modify {
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: green;
+    font-size: 15px;
+  }
+  button:hover {
+    opacity: 0.9;
+    background-color: #c7d4e8;
+  }
+  img:hover {
+    opacity: 0.9;
+    background-color: #c7d4e8;
+  }
+  button:hover {
+    opacity: 0.9;
+    background-color: #c7d4e8;
+  }
+  div.container {
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <header>
+      <div class="buttons"> 
+        <button alt="Home" onclick="window.location.href='../index.php'"><img src="../img/home.png"  width="30" height="30"/></button>
+      </div>
+    </header>
+  </div>
+  <div>
+
+      <div class="auth">
+          <div class="container">
+        <form class="auth-content"  method="POST" action="login.php" >
+            <p><label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="login" required></br>
+            </p>
+              <p><label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="passwd" required></br></p>
+                <p>
+                	<!-- <input class="modify" type="submit" value='Login'/> -->
+                  <!-- <span style="padding-left:30px"></span> -->
+                 <!--  <button class="modify" type="submit" onclick="window.location.href='index.html'">Delete Account</button> -->
+                <input class="modify" type="submit" value='Login'/>
+                  <span style="padding-left:30px"></span>
+                  <button class="modify" type="button" onclick="window.location.href='../index.php'" class="cancelbtn">Cancel</button>
+                  <span style="padding-left:30px"></span></p>
+                </div>
+              </form>
+            </div>
+          </body>
+          </html>
